@@ -20,23 +20,23 @@ function setup() {
   // Initialize the canvas.
   createCanvas(450, 450);
   // Initialize location and radius of ball.
+  r = 10;
   x = random(width - r);
   y = random(height - r);
-  r = 10;
   // Random x and y speeds.
   xspeed = random(-3, 3);
   yspeed = random(-3, 3);
 }
 
 function draw() {
-  // Dark grey bakground.
+  // Dark grey background.
   background(51);
   
   // Drawing the ball.
   fill(100, 0, 200);
   stroke(255);
   strokeWeight(2);
-  ellipse(x, y, r*2);
+  ellipse(x, y, r*2, r*2);
   
   // Check if the ball touches any edge and reverse speed.
   if (x < r || x > width - r) {
