@@ -21,7 +21,7 @@ function setup() {
   createCanvas(450, 450);
   // Initialize location and radius of ball.
   x = random(width - r);
-  y = random(sheight - r);
+  y = random(height - r);
   r = 10;
   // Random x and y speeds.
   xspeed = random(-3, 3);
